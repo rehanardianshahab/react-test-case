@@ -1,12 +1,56 @@
-# React + Vite
+# React Test Case - Clean Code Architecture  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Environment Information  
 
-Currently, two official plugins are available:
+- **Node.js Version**: 20.13.1  
+- **npm Version**: 10.5.2  
+- **React Version**: 18.0.0  
+- **Plugins or Library Used**:  
+    - `@vitejs/plugin-react`: For enhanced React support in Vite.  
+    - `ant-design`: For UI components and design system.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started  
 
-## Expanding the ESLint configuration
+### Running the Application  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:  
+    ```bash  
+    git clone https://github.com/your-repo/react-test-case.git  
+    cd react-test-case/clean-code-arch  
+    ```  
+
+2. Install dependencies:  
+    ```bash  
+    npm install  
+    ```  
+
+3. Create a `.env` file based on `env.example`:  
+    ```bash  
+    cp env.example .env  
+    ```  
+
+4. Fill in the `.env` file with the following variables:  
+    ```plaintext  
+    VITE_APIKEY=<your_api_key_from_newsapi.org>  
+    ```  
+
+5. Start the application:  
+    ```bash  
+    npm run dev  
+    ```  
+
+### Running Tests  
+
+1. Run all tests:  
+    ```bash  
+    npm test  
+    ```  
+
+2. Specific tests included:  
+    - **Home Page Test**: Verifies the functionality of the home page.
+    - **Login Page Test**: Tests the login functionality and form validation.
+
+### Notes  
+
+- Ensure all required environment variables are correctly set in `.env`.
+- Tests are written using Jest and React Testing Library.
