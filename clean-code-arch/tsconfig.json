@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "types": ["@testing-library/jest-dom", "node", "jest"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@data/*": ["./data/*"],
+      "@domain/*": ["./domain/*"],
+      "@interactors/*": ["./domain/interactors/*"],
+      "@entity/*": ["./domain/entity/*"],
+      "@repository/*": ["./domain/repository/*"],
+      "@presentation/*": ["./presentation/*"],
+    },
+  },
+  "include": ["src", "vite-env.d.ts"],
+  "exclude": ["node_modules"]
+}
